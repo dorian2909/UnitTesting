@@ -1,4 +1,3 @@
-from unittest import result
 
 import pymongo as pymongo
 from flask import Flask, jsonify, abort, make_response, request
@@ -94,7 +93,7 @@ def create_artesano():
     token = generate_id()
 
     art = {
-        '_id': ObjectId(),
+   
         'custom_id': art_data['custom_id'],
         'nombre_completo': art_data['nombre_completo'],
         'email': art_data['email'],
